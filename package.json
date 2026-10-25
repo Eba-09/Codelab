@@ -1,0 +1,31 @@
+{
+  "name": "algo-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "C++ хэлийг анхан шатнаас өрсөлдөөнт программчлал хүртэл сурах видео хичээл ба бодлогын сан",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^5.18.0",
+    "@mui/material": "^5.18.0",
+    "@mui/material-nextjs": "^5.18.0",
+    "framer-motion": "^11.18.2",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35"
+  }
+}

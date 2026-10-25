@@ -1,0 +1,51 @@
+:root {
+  --brand: #1e63e9;
+  --brand-2: #0ea5e9;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Гоё scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c7d4f0 transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #c7d4f0;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #1e63e9 0%, #0ea5e9 60%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto !important;
+  }
+}
