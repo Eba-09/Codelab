@@ -38,7 +38,7 @@ import CheckCircleRounded from '@mui/icons-material/CheckCircleRounded';
 import RadioButtonUncheckedRounded from '@mui/icons-material/RadioButtonUncheckedRounded';
 import SearchOffRounded from '@mui/icons-material/SearchOffRounded';
 import PageHero from '@/components/common/PageHero';
-import { LevelChip, TopicChip } from '@/components/common/Chips';
+import { LevelChip, LevelMeter, TopicChip } from '@/components/common/Chips';
 import ProblemListItem from './ProblemListItem';
 import useLocalSet, { STORAGE_KEYS } from '@/hooks/useLocalSet';
 import { LEVELS, TOPICS } from '@/data/topics';
@@ -158,9 +158,9 @@ export default function ProblemsExplorer({ problems }) {
         subtitle="Сэдэв, түвшингээр шүүж хайгаад, өөрийн компьютер дээр бодоод жишээ тестээр шалгаарай."
       >
         <Grid container spacing={1.5} sx={{ mt: 3, maxWidth: 760 }}>
-          <StatBox label="Нийт бодлого" value={problems.length} color="#1E63E9" />
-          {Object.entries(LEVELS).map(([k, v]) => (
-            <StatBox key={k} label={v.label} value={counts[k]} color={v.color} />
+          <StatBox label="Нийт бодлого" value={problems.length} />
+          {Object.keys(LEVELS).map((k) => (
+            <StatBox key={k} label={LEVELS[k].label} value={counts[k]} level={k} />
           ))}
         </Grid>
       </PageHero>
@@ -253,7 +253,8 @@ export default function ProblemsExplorer({ problems }) {
               >
                 <ToggleButton value="all">Бүх түвшин</ToggleButton>
                 {Object.entries(LEVELS).map(([k, v]) => (
-                  <ToggleButton key={k} value={k}>
+                  <ToggleButton key={k} value={k} sx={{ gap: 1 }}>
+                    <LevelMeter level={k} size={12} />
                     {v.label}
                   </ToggleButton>
                 ))}
@@ -382,14 +383,17 @@ export default function ProblemsExplorer({ problems }) {
   );
 }
 
-function StatBox({ label, value, color }) {
+function StatBox({ label, value, level }) {
   return (
     <Grid item xs={6} sm={3}>
       <Paper variant="outlined" sx={{ p: 1.75, bgcolor: 'rgba(255,255,255,0.85)' }}>
-        <Typography sx={{ fontSize: 26, fontWeight: 800, color, lineHeight: 1.1 }}>{value}</Typography>
-        <Typography variant="body2" color="text.secondary">
-          {label}
-        </Typography>
+        <Typography sx={{ fontSize: 26, fontWeight: 800, color: level ? 'text.primary' : 'primary.main', lineHeight: 1.1 }}>{value}</Typography>
+        <Stack direction="row" spacing={0.75} alignItems="center">
+          {level && <LevelMeter level={level} size={12} />}
+          <Typography variant="body2" color="text.secondary">
+            {label}
+          </Typography>
+        </Stack>
       </Paper>
     </Grid>
   );

@@ -3,8 +3,8 @@
  * Брэндийн нэр, холбоо барих мэдээллээ эндээс л солиход хангалттай.
  */
 export const siteConfig = {
-  name: 'AlgoAcademy',
-  logo: { first: 'Algo', second: 'Academy' },
+  name: 'CodeLab',
+  logo: { first: 'Code', second: 'Lab' },
   tagline: 'C++ — анхан шатнаас өрсөлдөөнт программчлал хүртэл',
   description:
     'C++ хэлийг анхан шатнаас өрсөлдөөнт программчлал хүртэл үнэгүй, бүртгэлгүйгээр сурах видео хичээл ба бодлогын сан.',

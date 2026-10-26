@@ -134,7 +134,7 @@ export default function Hero({ stats }) {
                 icon={<BoltRounded />}
                 title="O(n log n)"
                 text="Хурдан алгоритм"
-                color="#F59E0B"
+                color="#1E63E9"
                 sx={{ top: { xs: -18, md: -26 }, right: { xs: -4, md: -28 } }}
                 delay={0.7}
               />

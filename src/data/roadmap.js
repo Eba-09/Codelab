@@ -1,6 +1,8 @@
 /**
  * Сургалтын зам — шат бүр хичээл болон сэдвүүдтэй холбогдоно.
+ * Өнгө нь цайвараас гүн цэнхэр рүү шилжиж ахицыг илэрхийлнэ.
  */
+
 export const roadmap = [
   {
     step: 1,
@@ -9,7 +11,7 @@ export const roadmap = [
     description: 'C++ хэлний бүтэц, хувьсагч, оролт гаралт, нөхцөл ба давталт. Бодлого бодох логик сэтгэлгээгээ хөгжүүлнэ.',
     lessons: [1, 2, 3, 4],
     topics: ['io', 'condition', 'loop'],
-    color: '#16A34A',
+    color: '#3B82F6',
   },
   {
     step: 2,
@@ -18,7 +20,7 @@ export const roadmap = [
     description: 'Олон өгөгдлийг хадгалж боловсруулах, кодоо функцэд хувааж цэгцтэй бичих, рекурсын санааг ойлгох.',
     lessons: [5, 6, 7],
     topics: ['array', 'string', 'function', 'recursion'],
-    color: '#0EA5E9',
+    color: '#2563EB',
   },
   {
     step: 3,
@@ -27,7 +29,7 @@ export const roadmap = [
     description: 'Эрэмбэлэлт, STL, хоёртын хайлт, prefix sum, хоёр заагч, шунахай арга. Хугацааны үнэлгээ хийж сурна.',
     lessons: [8, 9],
     topics: ['sort', 'stl', 'stack', 'binary-search', 'prefix-sum', 'two-pointers', 'greedy'],
-    color: '#1E63E9',
+    color: '#1D4ED8',
   },
   {
     step: 4,
@@ -36,6 +38,6 @@ export const roadmap = [
     description: 'Динамик программчлал, граф, тооны онол. Олимпиад болон Codeforces төрлийн тэмцээнд бэлдэнэ.',
     lessons: [10],
     topics: ['dp', 'graph', 'number-theory'],
-    color: '#7C3AED',
+    color: '#1E3A8A',
   },
 ];

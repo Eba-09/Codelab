@@ -35,7 +35,7 @@ export default function RoadmapView({ roadmap, lessons, problemsByTopic }) {
               bottom: 28,
               left: { xs: 23, sm: 27 },
               width: 2,
-              background: 'linear-gradient(180deg, #16A34A, #0EA5E9, #1E63E9, #7C3AED)',
+              background: 'linear-gradient(180deg, #3B82F6, #2563EB, #1D4ED8, #1E3A8A)',
               opacity: 0.35,
             }}
           />

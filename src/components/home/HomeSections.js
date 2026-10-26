@@ -20,9 +20,9 @@ import useLocalSet, { STORAGE_KEYS } from '@/hooks/useLocalSet';
 export function Features({ stats }) {
   const features = [
     { icon: <LockOpenRounded />, title: 'Бүртгэлгүй', text: 'Нэвтрэх, бүртгүүлэх шаардлагагүй. Сайтад орсон даруйдаа сурч эхэлнэ.', color: '#1E63E9' },
-    { icon: <OndemandVideoRounded />, title: `${stats.lessons} видео хичээл`, text: 'Дэс дараатай, ойлгомжтой тайлбартай, код жишээтэй хичээлүүд.', color: '#0EA5E9' },
-    { icon: <CodeRounded />, title: `${stats.problems}+ бодлого`, text: 'Сэдэв, түвшингээр ангилсан, жишээ тест болон зөвлөгөөтэй.', color: '#7C3AED' },
-    { icon: <TrendingUpRounded />, title: 'Анхнаас ахисан', text: 'Оролт гаралтаас эхлээд DP, граф хүртэл тодорхой замналтай.', color: '#16A34A' },
+    { icon: <OndemandVideoRounded />, title: `${stats.lessons} видео хичээл`, text: 'Дэс дараатай, ойлгомжтой тайлбартай, код жишээтэй хичээлүүд.', color: '#1E63E9' },
+    { icon: <CodeRounded />, title: `${stats.problems}+ бодлого`, text: 'Сэдэв, түвшингээр ангилсан, жишээ тест болон зөвлөгөөтэй.', color: '#1E63E9' },
+    { icon: <TrendingUpRounded />, title: 'Анхнаас ахисан', text: 'Оролт гаралтаас эхлээд DP, граф хүртэл тодорхой замналтай.', color: '#1E63E9' },
   ];
 
   return (

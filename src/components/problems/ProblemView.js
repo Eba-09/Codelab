@@ -136,7 +136,7 @@ export default function ProblemView({ problem, prev, next, lesson }) {
               <Accordion disableGutters elevation={0} sx={{ mt: 2.5 }}>
                 <AccordionSummary expandIcon={<ExpandMoreRounded />}>
                   <Stack direction="row" spacing={1} alignItems="center">
-                    <LightbulbRounded sx={{ color: 'warning.main' }} />
+                    <LightbulbRounded color="primary" />
                     <Typography fontWeight={700}>Зөвлөгөө харах</Typography>
                   </Stack>
                 </AccordionSummary>
